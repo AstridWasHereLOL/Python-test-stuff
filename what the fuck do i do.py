@@ -1,0 +1,28 @@
+# what the fuck do i do
+from tkinter import *
+import tkinter as tk
+import tkinter.ttk as ttk
+
+# declare the window
+window = Tk()
+window.title("Very Cool Game.exe")
+window.configure(bg='lightgray')
+
+# a label??????
+label = tk.Label(
+    text="my brudda"
+)
+
+# an entry?????????????????
+entry = tk.Entry()
+
+# a button???????????????????????????? oh hell naw!!!!
+button = tk.Button(
+    text="submit dat shit!!"
+)
+
+label.pack()
+entry.pack()
+button.pack()
+
+window.mainloop()

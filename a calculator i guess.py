@@ -12,3 +12,6 @@ elif operation == "division":
     print(num1 / num2)
 else:
     print("I don't know that operation type. Try again with no captials, no spaces, and the full name of the operation.")
+
+
+# i love this programming language

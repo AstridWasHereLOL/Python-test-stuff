@@ -38,7 +38,7 @@ def startRPC():
     appState = appStatee.get()
     Limage = Limagee.get()
     Simage = Simagee.get()
-    RPC = Presence(appID)
+    RPC = Presence(appID, pipe=0, loop=None, handler=None)
     if int(wantTS) == 1:
         RPC.connect()
         RPC.update(state=appState)
@@ -72,6 +72,7 @@ def startRPC():
 def stopRPC():
     appID = appIDe.get()
     RPC = Presence(appID)
+    RPC.connect()
     RPC.clear()
     RPC.close()
     notification.notify(

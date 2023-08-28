@@ -17,7 +17,7 @@ def startRPC():
     Limage = Limagee.get()
     Simage = Simagee.get()
     rpc = DiscordRPC.RPC.Set_ID(app_id=appID)
-    if wantTSint == "1":
+    if int(wantTS) == 1:
         rpc.set_activity(
             state=appState,
             details=appDetails,

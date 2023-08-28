@@ -2,10 +2,12 @@
 from tkinter import *
 import tkinter as tk
 import tkinter.ttk as ttk
+from plyer import notification
 
 # declare the window
 window = Tk()
-window.title("Very Cool Game.exe")
+window.geometry("300x150")
+window.title("Very Cool program.py")
 window.configure(bg='lightgray')
 
 # a label??????
@@ -26,3 +28,11 @@ entry.pack()
 button.pack()
 
 window.mainloop()
+
+
+#notification.notify(
+#    title = 'testing',
+#    message = 'message',
+#    app_icon = None,
+#    timeout = 10,
+#)

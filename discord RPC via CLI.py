@@ -19,7 +19,7 @@ Simage = input("Small image key? (this is also case sensitive!) ")
 print("\nRemember! CTRL + C to terminate! (Windows, Linux, and Mac!)")
 
 rpc = DiscordRPC.RPC.Set_ID(app_id=appID)
-if wantTS == "Y":
+if wantTS.lower() == "y":
     rpc.set_activity(
       state=appState,
       details=appDetails,
@@ -27,14 +27,14 @@ if wantTS == "Y":
       small_image=Simage,
       timestamp=time.time()
     )
-elif wantTS == "y":
-     rpc.set_activity(
-      state=appState,
-      details=appDetails,
-      large_image=Limage,
-      small_image=Simage,
-      timestamp=time.time()
-    )
+#elif wantTS == "y":
+#     rpc.set_activity(
+#      state=appState,
+#      details=appDetails,
+#      large_image=Limage,
+#      small_image=Simage,
+#      timestamp=time.time()
+#    )
 else:
      rpc.set_activity(
       state=appState,

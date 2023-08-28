@@ -1,3 +1,5 @@
+# https://pypi.org/project/discord-rpc/
+
 import DiscordRPC
 import time
 
